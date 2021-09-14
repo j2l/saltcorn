@@ -153,8 +153,8 @@ const get_headers = (req, version_tag, description, extras = []) => {
     {
       headerTag: `<script>var _sc_globalCsrf = "${req.csrfToken()}"; var _sc_version_tag = "${version_tag}";</script>`,
     },
-    { css: `/static_assets/${version_tag}/saltcorn.css` },
-    { script: `/static_assets/${version_tag}/saltcorn.js` },
+    { css: `/static_assets/${version_tag}/server.css` },
+    { script: `/static_assets/${version_tag}/server.js` },
   ];
   let from_cfg = [];
   if (state.getConfig("page_custom_css", ""))
